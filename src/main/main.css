@@ -1,0 +1,8 @@
+#portrait {
+    background-image: url('../assets/portrait.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 1em;
+    width: 25%;
+}
