@@ -25,7 +25,7 @@ class Poc extends React.Component {
     return <div className='h-max flex p-2 m-6 hover:border-orange duration-300 border-2 bg-clifford hover:-translate-y-2 rounded-lg drop-shadow-[5px_5px_5px_rgba(6,6,6,0.75)]'>
       <div class="max-w-sm overflow-hidden ">
         <div class="font-bold text-xl mb-2 text-clair flex justify-between">{this.props.title} <a className='text-orange cursor-pointer hover:underline text-lg'>GitHub</a></div>
-        <img class="w-full cursor-pointer rounded-lg" src={this.getImage(this.props.id)} alt="poc image" />
+        <a href={this.props.link} target='_blank'><img class="w-full cursor-pointer rounded-lg" src={this.getImage(this.props.id)} alt="poc image" /></a>
         <div class="px-6 py-4">
           <p class="text-myWhite">
             {this.props.desc}
