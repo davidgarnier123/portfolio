@@ -16,7 +16,7 @@ class Exp extends React.Component {
             </div>
 
             <div className='p-6 border-b-2 border-white'>
-                <h3 className='text-clair text-3xl mb-6'>CDI - Juin 2021 à Février 2022</h3>
+                <h3 className='text-clair text-3xl mb-6'>CDI - Juin 2020 à Février 2022</h3>
                 <div className='text-myWhite'>A la fin de mon BTS, j'ai commencé à chercher un poste de développer web et après avoir repris contacte avec l'entreprise dans laquelle j'ai effectué mon stage nous avons conclu un CDI ensemble. Cette aventure à durait presque deux ans mais l'entreprise à fermée ses portes en Février 2022.
                 <br></br><br></br>J'ai dans un premier temps continué de travailler sur le projet dans lequel j'avais effectué mon stage en ajoutant plein de fonctionnalités sur l'ensemble du projet avec nottament beaucoup de visualisation de données (graphiques, graphiques interactifs). J'ai participé également au développement du plugin pour navigateurs web lié à l'application.
                 <br></br>Je suis restais en quasi total autonomie sur ce projet pendant près d'un an.

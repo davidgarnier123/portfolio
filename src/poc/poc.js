@@ -2,6 +2,7 @@ import React from 'react';
 import poc1 from '../assets/poc1.PNG';
 import poc2 from '../assets/poc2.PNG';
 import poc3 from '../assets/poc3.PNG';
+import poc4 from '../assets/poc4.PNG';
 
 
 class Poc extends React.Component {
@@ -19,6 +20,10 @@ class Poc extends React.Component {
       id : 3,
       img : poc3
     },
+    {
+      id : 4,
+      img : poc4
+    }
   ]
 
   render() {
