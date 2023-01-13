@@ -3,7 +3,7 @@ import './main.css';
 
 class Main extends React.Component {
     render() {
-      return <div className='h-max flex justify-center items-center pt-6 pb-6 mt-20'>
+      return <div className='h-max flex justify-center items-center pt-6 pb-6 mt-10'>
             <div className='xl:w-3/5 lg:w-5/5 md:w-5/5 bg-clifford flex hover:border-orange border-2 duration-300 rounded-lg drop-shadow-[5px_5px_5px_rgba(6,6,6,0.75)]'>
                 <div className='w-2/3 rounded-lg' id="portrait"></div>
                 <div className='flex justify-start flex-col p-6'>

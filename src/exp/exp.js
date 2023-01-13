@@ -2,9 +2,10 @@ import React from 'react';
 
 class Exp extends React.Component {
     render() {
-      return <div className='h-max flex justify-center items-center pt-6 pb-6 mt-20'>
+      return <div className='h-max flex justify-center items-center pt-6 pb-6 flex-col'>
+                    <h2 className='text-orange text-4xl justify-self-start pb-8 text-center drop-shadow-subTitle animate-pulse'>Mon experience professionelle</h2>
+
             <div className='xl:w-3/5 lg:w-5/5 md:w-5/5 bg-clifford flex flex-col p-6 duration-300 hover:border-orange border-2 rounded-lg drop-shadow-[5px_5px_5px_rgba(6,6,6,0.75)]'>
-            <h2 className='text-orange text-4xl justify-self-start mb-6 text-center'>Mon experience professionelle</h2>
             <div className='p-6 border-b-2 border-white'>
                 <h3 className='text-clair text-3xl mb-6'>Stage - 2019/2020</h3>
                 <div className='text-myWhite'>Dans le cadre de mon <a href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers" target='_blanck' className='text-orange'>BTS Services informatiques aux organisations </a> 
@@ -45,6 +46,12 @@ class Exp extends React.Component {
                     <li className='ml-6 text-myWhite'>ElasticSearch</li>
                     <li className='ml-6 text-myWhite'>Neo4j</li>
                     <li className='ml-6 text-myWhite'>WebSocket</li>
+
+                    <span className='text-orange text-xl'>Environement de travail :</span>
+                    <li className='ml-6 text-myWhite'>Debian</li>
+                    <li className='ml-6 text-myWhite'>GitLab</li>
+                    <li className='ml-6 text-myWhite'>AdobeXD</li>
+                    <li className='ml-6 text-myWhite'>Trello / Slack</li>
                 </ul>
             </div>
             </div>
