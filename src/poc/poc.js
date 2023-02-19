@@ -39,13 +39,13 @@ class Poc extends React.Component {
         <a href={this.props.link} target='_blank'><img className="w-full cursor-pointer rounded-lg" src={this.getImage(this.props.id)} alt="poc image" /></a>
         <div className='py-2 mt-2'>
           { this.props.technos.map( (item, i) => {
-          return <span className='text-orange mr-5 border-orange border border-myWhite p-1 rounded-lg text-sm pl-2 pr-2' key={i}>
+          return <span className='text-orange mr-5 border-orange border border-myWhite p-1 rounded-lg text-sm pl-2 pr-2 whitespace-nowrap' key={i}>
                     {item}
                 </span>
             })
           }
         </div>
-        <div className="px-6 py-3">
+        <div className="px-6 py-3 flex flex-wrap">
           <p className="text-myWhite">
             {this.props.desc}
           </p>
