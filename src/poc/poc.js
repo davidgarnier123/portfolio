@@ -1,9 +1,9 @@
 import React from 'react';
-import poc1 from '../assets/poc1.PNG';
-import poc2 from '../assets/poc2.PNG';
-import poc3 from '../assets/poc3.PNG';
-import poc4 from '../assets/poc4.PNG';
-import poc5 from '../assets/poc5.PNG';
+import poc1 from '../assets/poc1.webp';
+import poc2 from '../assets/poc2.webp';
+import poc3 from '../assets/poc3.webp';
+import poc4 from '../assets/poc4.webp';
+import poc5 from '../assets/poc5.webp';
 
 
 class Poc extends React.Component {
