@@ -25,6 +25,7 @@ class Exp extends React.Component {
             <div className='xl:w-3/5 lg:w-5/5 md:w-5/5 bg-cliffordLight md:bg-clifford flex flex-col p-6 duration-300 hover:border-orange md:border-2 md:rounded-lg drop-shadow-[5px_5px_5px_rgba(6,6,6,0.75)]'>
                 <div className='p-2 pb-8 md:p-6 border-b-2 border-white'>
                     <h3 className='text-clair text-3xl mb-6'>Stage - 2019/2020</h3>
+                    
                     <div className='text-myWhite'>Dans le cadre de mon <a href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers" target='_blanck' className='text-orange'>BTS Services informatiques aux organisations </a>
                         j'ai réalisé un stage de 10 semaines dans une <a className='text-orange'>startup à La Rochelle</a> en tant que développeur web.
                         <br></br>J'ai été intégré à un <a className='text-orange'>nouveau projet dans le domaine de la cybersécurité</a> qui avait pour objectif de protéger les données personnelles des utilisateurs.
