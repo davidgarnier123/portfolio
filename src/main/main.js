@@ -18,7 +18,7 @@ class Main extends React.Component {
             })
         }
       return <div className='h-max flex justify-center items-center pt-6 pb-6 mt-10'>
-            <div className='xl:w-3/5 lg:w-5/5 md:w-5/5  flex-col md:flex-row bg-clifford flex hover:border-orange border-2 duration-300 rounded-lg drop-shadow-[5px_5px_5px_rgba(6,6,6,0.75)]'>
+            <div className='xl:w-3/5 lg:w-5/5 md:w-5/5  flex-col md:flex-row bg-cliffordLight md:bg-clifford flex hover:border-orange md:border-2 duration-300 md:rounded-lg drop-shadow-[5px_5px_5px_rgba(6,6,6,0.75)]'>
                 <div className='w-3/3 h-60 m-0 m-auto md:w-1/3 md:h-auto rounded-lg ' id="portrait"></div>
                 <div className='flex justify-start flex-col p-6'>
                     <span className='text-3xl text-clair'>Bonjour,</span>
@@ -31,7 +31,7 @@ class Main extends React.Component {
                         <div className='flex'><span className='w-20 text-orange'>AGE :</span> <p className='text-clair font-bold'>29 Ans</p></div>
                         <div className='flex'><span className='w-20 text-orange'>VILLE :</span> <p className='text-clair font-bold'>La Rochelle</p></div>
                     </div>
-                    <a className='bg-orange w-full mt-8 text-center text-clair p-4 cursor-pointer rounded-lg duration-200 border-2 border-transparent hover:border-clair font-bold' onClick={download}>TELECHARGER CV</a>
+                    <a className='bg-orange w-full md:w-fit mt-8 text-center text-clair p-4 cursor-pointer rounded-lg duration-200 border-2 border-transparent hover:border-clair font-bold' onClick={download}>TELECHARGER CV</a>
                 </div>
             </div>
         </div>

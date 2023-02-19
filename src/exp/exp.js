@@ -4,16 +4,16 @@ import { TypeAnimation } from 'react-type-animation';
 class Exp extends React.Component {
     render() {
         return <div className='h-max flex justify-center items-center pt-6 pb-6 flex-col'>
-            <h2 className='text-orange text-xl md:text-4xl justify-self-start pb-8 text-center drop-shadow-subTitle'>
+            <h2 className='text-orange text-2xl md:text-4xl justify-self-start pb-8 text-center drop-shadow-subTitle'>
                 <TypeAnimation
                     sequence={[
                         '',
                         1000,
                         'Exp',
                         1000,
-                        '<Expérience professionelle/>',
+                        '<Expérience pro/>',
                         2000,
-                        '<Expérience professionelle length="2"/>',
+                        '<Expérience pro length="2"/>',
                         2000,
                     ]}
                     wrapper="div"
@@ -22,8 +22,8 @@ class Exp extends React.Component {
                 />
             </h2>
 
-            <div className='xl:w-3/5 lg:w-5/5 md:w-5/5 bg-clifford flex flex-col p-6 duration-300 hover:border-orange border-2 rounded-lg drop-shadow-[5px_5px_5px_rgba(6,6,6,0.75)]'>
-                <div className='p-6 border-b-2 border-white'>
+            <div className='xl:w-3/5 lg:w-5/5 md:w-5/5 bg-cliffordLight md:bg-clifford flex flex-col p-6 duration-300 hover:border-orange md:border-2 md:rounded-lg drop-shadow-[5px_5px_5px_rgba(6,6,6,0.75)]'>
+                <div className='p-2 pb-8 md:p-6 border-b-2 border-white'>
                     <h3 className='text-clair text-3xl mb-6'>Stage - 2019/2020</h3>
                     <div className='text-myWhite'>Dans le cadre de mon <a href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers" target='_blanck' className='text-orange'>BTS Services informatiques aux organisations </a>
                         j'ai réalisé un stage de 10 semaines dans une <a className='text-orange'>startup à La Rochelle</a> en tant que développeur web.
@@ -33,7 +33,7 @@ class Exp extends React.Component {
                     </div>
                 </div>
 
-                <div className='p-6 border-b-2 border-white'>
+                <div className='p-2 pb-8 pt-8 md:p-6 border-b-2 border-white'>
                     <h3 className='text-clair text-3xl mb-6'>CDI - Juin 2020 à Février 2022</h3>
                     <div className='text-myWhite'>A la fin de mon BTS, j'ai commencé à chercher un poste de développer web et après avoir repris contacte avec l'entreprise dans laquelle j'ai effectué mon stage nous avons conclu un CDI ensemble. Cette aventure à durait presque deux ans mais l'entreprise à fermée ses portes en Février 2022.
                         <br></br><br></br>J'ai dans un premier temps continué de travailler sur le projet dans lequel j'avais effectué mon stage en ajoutant plein de fonctionnalités sur l'ensemble du projet avec nottament beaucoup de visualisation de données (graphiques, graphiques interactifs). J'ai participé également au développement du plugin pour navigateurs web lié à l'application.
@@ -47,7 +47,7 @@ class Exp extends React.Component {
 
 
                 </div>
-                <div className='p-6 lg:w-3/5 md:w-5/5'>
+                <div className='pb-8 pt-4 md:p-6 md:pt-2 lg:w-3/5 md:w-5/5'>
                     <h3 className='text-clair text-2xl mt-6 mb-6'>Technologies utilisées :</h3>
                     <ul>
                         <span className='text-orange text-xl'>Front :</span>
