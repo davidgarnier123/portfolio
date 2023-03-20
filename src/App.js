@@ -11,28 +11,6 @@ import { loadFull } from "tsparticles";
 
 function App() {
 
-  function observeHandler(ob) {
-    ob.forEach((el) => {
-      el.target.style.opacity = ob[0].intersectionRatio;
-    });
-  }
-  let options = {
-    root: document,
-    rootMargin: '0px',
-    threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
-  }
-
-
-  let observer = new IntersectionObserver(observeHandler, options);
-
-  useEffect(() => {
-    let els = document.querySelectorAll('[data-observe]');
-    els.forEach((el) => {
-      observer.observe(el);
-    });
-  });
-
-
   const particlesInit = useCallback(async engine => {
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready

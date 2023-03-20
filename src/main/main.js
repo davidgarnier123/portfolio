@@ -31,7 +31,7 @@ class Main extends React.Component {
                         <div className='flex'><span className='w-20 text-orange'>AGE :</span> <p className='text-clair font-bold'>29 Ans</p></div>
                         <div className='flex'><span className='w-20 text-orange'>VILLE :</span> <p className='text-clair font-bold'>La Rochelle</p></div>
                     </div>
-                    <a className='bg-orange w-full md:w-fit mt-8 text-center text-clair p-4 cursor-pointer rounded-lg duration-200 border-2 border-transparent hover:border-clair font-bold' onClick={download}>TELECHARGER CV</a>
+                    <a className='bg-orange w-full md:w-fit mt-8 text-center text-clair p-4 cursor-pointer rounded-lg duration-200 border-2 border-transparent hover:border-clair font-bold hover:-translate-y-2' onClick={download}>TELECHARGER CV</a>
                 </div>
             </div>
         </div>
