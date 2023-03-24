@@ -1,6 +1,5 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import TextEffect from '../textEffect/textEffect';
 
 class Header extends React.Component {
     render() {

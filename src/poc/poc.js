@@ -35,14 +35,14 @@ class Poc extends React.Component {
 
     return <div className='h-auto flex p-2 m-6 hover:border-orange duration-300 border-2 bg-cliffordLight md:bg-clifford hover:-translate-y-2 rounded-lg drop-shadow-[5px_5px_5px_rgba(6,6,6,0.75)] hover:drop-shadow-[5px_5px_10px_rgba(6,6,6,0.75)]'>
       <div className="max-w-sm overflow-hidden ">
-        <div className="font-bold text-xl mb-2 text-clair flex justify-between">{this.props.title} <a className='text-orange cursor-pointer hover:underline text-lg' href={this.props.github} target='_blank'>GitHub</a></div>
-        <a href={this.props.link} target='_blank'><img className="w-full cursor-pointer rounded-lg" src={this.getImage(this.props.id)} alt="poc image" /></a>
+        <div className="font-bold text-xl mb-2 text-clair flex justify-between">{this.props.title} <a className='text-orange cursor-pointer hover:underline text-lg' href={this.props.github} target='_blank' rel="noreferrer">GitHub</a></div>
+        <a href={this.props.link} target='_blank' rel="noreferrer"><img className="w-full cursor-pointer rounded-lg" src={this.getImage(this.props.id)} alt="poc" /></a>
         <div className='py-2 mt-2'>
-          { this.props.technos.map( (item, i) => {
-          return <span className='text-orange mr-5 border-orange border border-myWhite p-1 rounded-lg text-sm pl-2 pr-2 whitespace-nowrap' key={i}>
-                    {item}
-                </span>
-            })
+          {this.props.technos.map((item, i) => {
+            return <span className='text-orange mr-5 border-orange border border-myWhite p-1 rounded-lg text-sm pl-2 pr-2 whitespace-nowrap' key={i}>
+              {item}
+            </span>
+          })
           }
         </div>
         <div className="px-6 py-3 flex flex-wrap">
@@ -53,7 +53,7 @@ class Poc extends React.Component {
       </div>
     </div>
       ;
-      
+
   }
 
   getImage = (id) => {
