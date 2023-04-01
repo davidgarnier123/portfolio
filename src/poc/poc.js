@@ -33,7 +33,7 @@ class Poc extends React.Component {
 
   render() {
 
-    return <div className='h-auto flex p-2 m-6 hover:border-orange duration-300 border-2 bg-cliffordLight md:bg-clifford hover:-translate-y-2 rounded-lg drop-shadow-[5px_5px_5px_rgba(6,6,6,0.75)] hover:drop-shadow-[5px_5px_10px_rgba(6,6,6,0.75)]'>
+    return <div className='h-auto flex p-2 m-6 hover:border-orange duration-300 border-2 bg-cliffordLight md:bg-clifford hover:-translate-y-2 rounded-lg drop-shadow-shadow hover:drop-shadow-[5px_5px_10px_rgba(6,6,6,0.75)]'>
       <div className="max-w-sm overflow-hidden ">
         <div className="font-bold text-xl mb-2 text-clair flex justify-between">{this.props.title} <a className='text-orange cursor-pointer hover:underline text-lg' href={this.props.github} target='_blank' rel="noreferrer">GitHub</a></div>
         <a href={this.props.link} target='_blank' rel="noreferrer"><img className="w-full cursor-pointer rounded-lg" src={this.getImage(this.props.id)} alt="poc" /></a>

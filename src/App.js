@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App h-max bg-clair">
+    <div className="App h-max bg-myBlack">
       <Particles
         id="tsparticles"
         init={particlesInit}

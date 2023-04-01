@@ -298,7 +298,7 @@ const optionsParticles = {
           "height": 1080
         },
         "limit": 0,
-        "value": 80
+        "value": 70
       },
       "opacity": {
         "random": {
@@ -354,9 +354,9 @@ const optionsParticles = {
               "NPM",
               "HTTPS"
             ],
-            "font": "Verdana",
+            "font": "Roboto",
             "style": "",
-            "weight": "500",
+            "weight": "300",
             "fill": true
           }
         },
