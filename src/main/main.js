@@ -1,8 +1,5 @@
 import React from 'react';
 import './main.css';
-import CytoscapeComponent from 'react-cytoscapejs';
-import cytoscape from 'cytoscape';
-import nodeHtmlLabel from 'cytoscape-node-html-label';
 import angular from '../assets/angular.png';
 import typescript from '../assets/typescript.png';
 import node from '../assets/node.png';
@@ -14,125 +11,78 @@ import css from '../assets/css.png';
 import elastic from '../assets/elastic.png';
 import mongo from '../assets/mongo.png';
 import socket from '../assets/socket.png';
-const cola = require('cytoscape-cola');
-cytoscape.use(cola);
+import neo4j from '../assets/neo4j.png';
+import d3 from '../assets/d3.png';
+import cytoscape from '../assets/cytoscape.png';
+import chartjs from '../assets/chartjs.png';
 
-// Initialiser la librairie nodeHtmlLabel avec CytoscapeComponent
-nodeHtmlLabel(cytoscape);
 
 class Main extends React.Component {
 
   render() {
 
-    const elements = [
-      { data: { id: 'front', label: 'Stack', type: 'main', img: angular }, position: { x: 0, y: 0 } },
-
-      // front
-      { data: { id: 'angular', label: 'Angular', type: 'techno', img: angular } },
-      { data: { id: 'js', label: 'JavaScript', type: 'techno', img: js } },
-      { data: { id: 'ts', label: 'Typescript', type: 'techno', img: typescript } },
-      { data: { id: 'material', label: 'Material UI', type: 'techno', img: material } },
-      { data: { id: 'html', label: 'HTML', type: 'techno', img: html } },
-      { data: { id: 'css', label: 'CSS', type: 'techno', img: css } },
-      // back
-      { data: { id: 'node', label: 'Node.js', type: 'techno', img: node } },
-      { data: { id: 'express', label: 'Express.js', type: 'techno', img: express } },
-      { data: { id: 'mqtt', label: 'MQTT', type: 'techno', img: angular } },
-      { data: { id: 'mongo', label: 'MongoDB', type: 'techno', img: mongo } },
-      { data: { id: 'elastic', label: 'ElasticSearch', type: 'techno', img: elastic } },
-      { data: { id: 'socket', label: 'Socket.io', type: 'techno', img: socket } },
-
-
-      // edges
-      { data: { source: 'angular', target: 'front', label: 'Edge from Node1 to Node2' } },
-      { data: { source: 'js', target: 'front', label: 'Edge from Node1 to Node2' } },
-      { data: { source: 'ts', target: 'front', label: 'Edge from Node1 to Node2' } },
-      { data: { source: 'material', target: 'front', label: 'Edge from Node1 to Node2' } },
-      { data: { source: 'html', target: 'front', label: 'Edge from Node1 to Node2' } },
-      { data: { source: 'css', target: 'front', label: 'Edge from Node1 to Node2' } },
-
-
-      { data: { source: 'node', target: 'front', label: 'Edge from Node1 to Node2' } },
-      { data: { source: 'express', target: 'front', label: 'Edge from Node1 to Node2' } },
-      { data: { source: 'mqtt', target: 'front', label: 'Edge from Node1 to Node2' } },
-      { data: { source: 'mongo', target: 'front', label: 'Edge from Node1 to Node2' } },
-      { data: { source: 'elastic', target: 'front', label: 'Edge from Node1 to Node2' } },
-      { data: { source: 'socket', target: 'front', label: 'Edge from Node1 to Node2' } },
-
-
-    ];
-    const layout = {
-      name: 'cola',
-      randomize: true,
-      avoidOverlap: true,
-      nodeSpacing: 100,
-      edgeLength: 200,
-    };
-
-    const style = [
+    const technos = [
       {
-        selector: 'node',
-        style: {
-          'background-color': 'transparent',
-          'label': 'data(label)',
-          'color': '#EE6C4D',
-          'width': 'label',
-          'height': 'label',
-          'shape': 'round-rectangle',
-          'padding': '5px',
-          'background-opacity': '0'
-        }
+        name: 'HTML',
+        img: html
       },
       {
-        selector: 'node[type="techno"]',
-        style: {
-          'background-image': 'data(img)',
-          'background-fit': 'cover',
-          'background-position': '50% 50%',
-          'text-valign': 'bottom',
-          'font-size': '45vw',
-          'padding': '2%',
-          'width': '100%',
-          'height': '100%',
-          'text-margin-y': '25px',
-        }
+        name: 'CSS',
+        img: css
       },
       {
-        selector: 'node[type="main"]',
-        style: {
-          'label': '',
-          'border-width': '0.2vw',
-          'border-style': 'solid',
-          'border-color': 'white',
-          'background-color': '#141414',
-          'background-opacity': '0',
-          'color': 'white'
-        }
-      },
-
-      {
-        selector: ':active',
-        style: {
-
-
-        }
+        name: 'JavaScript',
+        img: js
       },
       {
-        selector: 'edge',
-        style: {
-          'curve-style': 'bezier',
-          'line-color': '#ccc',
-          'maximal': 100,
-          'width': 0.5
-        }
+        name: 'TypeScript',
+        img: typescript
       },
       {
-        selector: 'node:select',
-        style: {
-          'overlay-opacity': 0
-        }
+        name: 'Angular',
+        img: angular
+      },
+      {
+        name: 'Material-UI',
+        img: material
+      },
+      {
+        name: 'D3.js',
+        img: d3
+      },
+      {
+        name: 'Chart.js',
+        img: chartjs
+      },
+      {
+        name: 'Cytoscape',
+        img: cytoscape
+      },
+      {
+        name: 'Node.js',
+        img: node
+      },
+      {
+        name: 'Express.js',
+        img: express
+      },
+      {
+        name: 'Socket.io',
+        img: socket
+      },
+      {
+        name: 'Neo4J',
+        img: neo4j
+      },
+      {
+        name: 'ElasticSearch',
+        img: elastic
+      },
+      {
+        name: 'MongoDB',
+        img: mongo
       }
-    ];
+    ]
     const download = () => {
       // using Java Script method to get PDF file
       fetch('CV.pdf').then(response => {
@@ -192,30 +142,14 @@ class Main extends React.Component {
                             <li className='ml-6 text-myWhite'>AdobeXD</li>
                             <li className='ml-6 text-myWhite'>Trello / Slack</li>
                         </ul> */}
-              <CytoscapeComponent elements={elements} style={{ width: '100%', height: '400px' }} nodeHtmlLabel={nodeHtmlLabel} layout={layout} stylesheet={style} cy={(cy) => {
-                // Enregistrer la reference cy
-                this.cyRef = cy;
-                cy.userZoomingEnabled(false);
-                cy.userPanningEnabled(false);
-                cy.boxSelectionEnabled(false);
-
-                // Ajouter le hover event
-                cy.on('mouseover', 'node', (event) => {
-                  const node = event.target;
-                  // node.css('border-color', 'red');
-                  // node.css('border-width', '3px');
-                  node.style('label', node.data('label'));
-                });
-
-                // Ajouter l'event hover off
-                cy.on('mouseout', 'node', (event) => {
-                  const node = event.target;
-                  // node.css('border-color', 'black');
-                  // node.css('border-width', '1px');
-                  node.style('label', '');
-                });
-
-              }} />
+              <div className='flex justify-evenly flex-wrap'>
+                {technos.map((techno, index) => (
+                  <div key={index} className='flex flex-col m-4 text-center group'>
+                    <img src={techno.img} alt={techno.name} className='w-12 h-12 m-0 m-auto duration-500 group-hover:rotate-360'/>
+                    <span className='text-clair duration-200 group-hover:translate-y-1'>{techno.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
