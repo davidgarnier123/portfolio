@@ -117,7 +117,7 @@ class Main extends React.Component {
                     Je suis actuellement à la recherche d'un nouvel emploi, n'hésitez pas à me contacter pour davantages d'informations.</p> */}
             <span className='text-3xl text-clair'>Bonjour,</span>
 
-            <p className='mt-6 text-myWhite'>Je suis David Garnier, développeur web Fullstack passionné par les nouvelles technologies et leur impact sur la productivité des entreprises. Je suis à la recherche de nouvelles opportunités pour mettre en pratique mes compétences et continuer à apprendre. N'hésitez pas à me contacter pour plus d'informations.</p>
+            <p className='mt-6 text-myWhite'>Je suis David Garnier, <span className='text-orange'>développeur web Fullstack</span> passionné par les nouvelles technologies et leur impact sur la productivité des entreprises. Je suis à la <span className='text-orange'>recherche de nouvelles opportunités</span> pour mettre en pratique mes compétences et continuer à apprendre. N'hésitez pas à me contacter pour plus d'informations.</p>
             <hr className='mt-6 mb-6'></hr>
             <div className='grid gap-4 grid-cols-1 md:grid-cols-2'>
               <div className='flex'><span className='w-20 text-orange'>NOM :</span> <p className='text-clair font-bold'>David Garnier</p></div>
@@ -131,27 +131,6 @@ class Main extends React.Component {
         <div>
           <div className='pb-8 pt-4 md:p-6 md:pt-2 w-full flex'>
             <div className='flex flex-col w-full'>
-              {/* <ul>
-                            <span className='text-orange text-xl'>Front :</span>
-                            <li className='ml-6 text-myWhite'>Framework Angular 10+</li>
-                            <li className='ml-6 text-myWhite'>Javascript / Typescript</li>
-                            <li className='ml-6 text-myWhite'>HTML / CSS</li>
-                            <li className='ml-6 text-myWhite'>Visualisation de données : Chart.js / D3.js / Cytoscape.js</li>
-
-                            <span className='text-orange text-xl'>Back :</span>
-                            <li className='ml-6 text-myWhite'>NodeJS / ExpressJS</li>
-                            <li className='ml-6 text-myWhite'>MQTT</li>
-                            <li className='ml-6 text-myWhite'>ProtocolBuffer</li>
-                            <li className='ml-6 text-myWhite'>ElasticSearch</li>
-                            <li className='ml-6 text-myWhite'>Neo4j</li>
-                            <li className='ml-6 text-myWhite'>WebSocket</li>
-
-                            <span className='text-orange text-xl'>Environement de travail :</span>
-                            <li className='ml-6 text-myWhite'>Debian</li>
-                            <li className='ml-6 text-myWhite'>GitLab</li>
-                            <li className='ml-6 text-myWhite'>AdobeXD</li>
-                            <li className='ml-6 text-myWhite'>Trello / Slack</li>
-                        </ul> */}
               <div className='flex justify-evenly flex-wrap'>
                 {technos.map((techno, index) => (
                   <div key={index} className='flex flex-col m-4 text-center group'>
