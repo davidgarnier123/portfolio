@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './header/header';
 import Main from './main/main';
 import Exp from './exp/exp';
@@ -11,7 +11,9 @@ import { loadFull } from "tsparticles";
 import optionsParticles from './assets/particles/config';
 
 function App() {
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const particlesInit = useCallback(async engine => {
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
