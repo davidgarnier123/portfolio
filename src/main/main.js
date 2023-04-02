@@ -3,7 +3,7 @@ import './main.css';
 import angular from '../assets/angular.png';
 import typescript from '../assets/typescript.png';
 import node from '../assets/node.png';
-import express from '../assets/ExpressJS.png';
+import express from '../assets/express.png';
 import js from '../assets/js.png';
 import material from '../assets/material.png';
 import html from '../assets/html.png';
@@ -15,6 +15,8 @@ import neo4j from '../assets/neo4j.png';
 import d3 from '../assets/d3.png';
 import cytoscape from '../assets/cytoscape.png';
 import chartjs from '../assets/chartjs.png';
+import mqtt from '../assets/mqtt.png';
+import proto from '../assets/proto.png';
 
 
 class Main extends React.Component {
@@ -69,6 +71,14 @@ class Main extends React.Component {
       {
         name: 'Socket.io',
         img: socket
+      },
+      {
+        name: 'MQTT',
+        img: mqtt
+      },
+      {
+        name: 'Protobuf',
+        img: proto
       },
       {
         name: 'Neo4J',
@@ -145,8 +155,8 @@ class Main extends React.Component {
               <div className='flex justify-evenly flex-wrap'>
                 {technos.map((techno, index) => (
                   <div key={index} className='flex flex-col m-4 text-center group'>
-                    <img src={techno.img} alt={techno.name} className='w-12 h-12 m-0 m-auto duration-500 group-hover:rotate-360'/>
-                    <span className='text-clair duration-200 group-hover:translate-y-1'>{techno.name}</span>
+                    <img src={techno.img} alt={techno.name} className='w-8 h-8 m-0 m-auto duration-500 group-hover:rotate-360'/>
+                    <span className='text-clair text-sm duration-200 group-hover:translate-y-1'>{techno.name}</span>
                   </div>
                 ))}
               </div>
